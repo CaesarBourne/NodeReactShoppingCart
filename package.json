@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "shopping list mern stack",
   "main": "server.js",
+  "engines": {
+    "node": "10.16.1"
+  },
   "scripts": {
     "client-install": "npm install --prefix client",
     "start": "node server.js",
@@ -17,7 +20,8 @@
     "concurrently": "^4.1.1",
     "express": "^4.17.1",
     "mongoose": "^5.6.7",
-    "morgan": "^1.9.1"
+    "morgan": "^1.9.1",
+    "npm-windows-upgrade": "^6.0.1"
   },
   "devDependencies": {
     "nodemon": "^1.19.1"
