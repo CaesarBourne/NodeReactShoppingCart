@@ -4,7 +4,8 @@
   "description": "shopping list mern stack",
   "main": "server.js",
   "engines": {
-    "node": "10.16.1"
+    "node": "10.16.1",
+    "npm": "6.9.0"
   },
   "scripts": {
     "client-install": "npm install --prefix client",
