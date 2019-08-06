@@ -6,7 +6,7 @@ const config = require("./lib/config")
 const shopRoutes =require("./routes/shop");
 const path = require("path");
 
-mongoose.connect(config.db,  { useNewUrlParser: true } )
+mongoose.connect(config.dbatlas,  { useNewUrlParser: true } )
 .then(()=>{
   
     console.log("connection to db is succesful");
