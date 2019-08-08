@@ -1,6 +1,6 @@
 const express  = require("express");
 const app = express();
-const port = process.env.port || 3300;
+
 const mongoose = require("mongoose");
 const config = require("./lib/config")
 const shopRoutes =require("./routes/shop");
@@ -25,9 +25,10 @@ if(process.env.NODE_ENV === "production"){
 
     app.get("*", (req, res)=>{
         res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
-    })
-}
+    });
+};
 
+const port = process.env.port || 3300;
 app.listen(port, ()=>{
     console.log(`app is listening on port ${port}`);
 })
